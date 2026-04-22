@@ -1,0 +1,40 @@
+Début
+
+  Déclarer T1[4] ← [3,1,7,9]
+  Déclarer T2[5] ← [2,4,1,9,3]
+
+  somme ← 0
+
+  // Vérifier éléments de T1
+  Pour i de 1 à 4 faire
+    existe ← faux
+
+    Pour j de 1 à 5 faire
+      Si T1[i] = T2[j] alors
+        existe ← vrai
+      FinSi
+    FinPour
+
+    Si existe = faux alors
+      somme ← somme + T1[i]
+    FinSi
+  FinPour
+
+  // Vérifier éléments de T2
+  Pour i de 1 à 5 faire
+    existe ← faux
+
+    Pour j de 1 à 4 faire
+      Si T2[i] = T1[j] alors
+        existe ← vrai
+      FinSi
+    FinPour
+
+    Si existe = faux alors
+      somme ← somme + T2[i]
+    FinSi
+  FinPour
+
+  Afficher "Somme =", somme
+
+Fin
