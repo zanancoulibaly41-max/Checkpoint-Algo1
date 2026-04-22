@@ -1,0 +1,26 @@
+Début
+
+  Lire n  // taille des vecteurs
+
+  Déclarer v1[n], v2[n]
+  Déclarer ps
+
+  // Remplir vecteurs
+  Pour i de 1 à n faire
+    Lire v1[i]
+  FinPour
+
+  Pour i de 1 à n faire
+    Lire v2[i]
+  FinPour
+
+  // Appel procédure
+  dot_product(v1, v2, n, ps)
+
+  Si ps = 0 alors
+    Afficher "Vecteurs orthogonaux"
+  Sinon
+    Afficher "Non orthogonaux"
+  FinSi
+
+Fin
